@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICATION</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        .en {font-family: 'Lato', sans-serif;}
+        body {width: 97%; margin: 5vh auto; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+        table,td,th {border: 1px solid #CECECE; border-collapse : collapse; line-height: 1.2; text-align: center; padding: 10px 0; box-sizing: border-box;}
+        .top {background: #324978; color: #fff; font-size: 25px; font-weight: bold;box-sizing: border-box; border: none; padding: 15px 0; }
+        .left {background: #B4B4B4; color: #fff;font-weight: bold; font-size: 20px;}
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+    <col style="width: 9.4%;">
+    <col style="width: 6.25%;">
+    <col style="width: 3.2%;">
+    <col style="width: 6.25%;">
+    <col style="width: 25%;">
+    <col style="width: 25%;">
+    <col style="width: 25%;">
+    <!-- 표에 단독으로 border를 지우고 싶을 때 <td>에 style="border: none;" 주면됩니다. -->
+        <thead>
+            <tr class="top">
+                <td colspan="4" style="border: none;">구분</td>
+                <td style="border: none;">CS 75A II</td>
+                <td style="border: none;">CS 100A II</td>
+                <td style="border: none;">CS 150A II</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="10" class="left">Work</td>
+                <td rowspan="4">소재크기</td>
+                <td rowspan="2">원형</td>
+                <td>1</td>
+                <td>10~76.3mm</td>
+                <td>25 ~ 101.6mm</td>
+                <td>75 ~ 152.4mm</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10~35mm</td>
+                <td>25~45mm</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="2">사각</td>
+                <td>1</td>
+                <td>□10~□30mm</td>
+                <td>□25 ~ □75mm</td>
+                <td>□75~□100mm</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>□10~□60mm</td>
+                <td>□25~□37.5mm</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td colspan="3">최대소재질량</td>
+                <td>216kg<br>
+                    (76.3-6m 1本 상당)</td>
+                <td>382kg<br>
+                    (101.6mm - 6m,1本상당)</td>
+                <td>860kg<br>
+                    (152.4mm - 6m,1本상당)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">소재길이</td>
+                <td colspan="2">최대</td>
+                <td>6000mm</td>
+                <td>6000mm</td>
+                <td>6000mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">최소</td>
+                <td>1000mm, 短가공<br>
+                    (제품길이+300mm)</td>
+                <td>1000mm, 短가공<br>
+                    (제품길이+300mm)</td>
+                <td>1000mm, 短가공<br>
+                    (제품길이+300mm)</td>
+            </tr>
+            <tr>
+                <td rowspan="3">절단길이</td>
+                <td colspan="2">끝단절단길이</td>
+                <td>10mm이상</td>
+                <td>10mm이상</td>
+                <td>20mm이상</td>
+            </tr>
+            <tr>
+                <td colspan="2">잔재길이</td>
+                <td>25mm 이상</td>
+                <td>30mm 이상</td>
+                <td>40mm 이상</td>
+            </tr>
+            <tr>
+                <td colspan="2">제품길이</td>
+                <td>10mm이상</td>
+                <td>10mm이상</td>
+                <td>20mm이상</td>
+            </tr>
+            <tr>
+                <td rowspan="7"class="left">cucular<br>
+                    saw</td>
+                <td colspan="3"rowspan="2">톱날종류</td>
+                <td>초경날<br>
+                    (285mm x 32mm x t2.0mm)</td>
+                <td>초경날
+                    (360mm x 50mm x t2.6mm)</td>
+                <td>초경날
+                    (460mm x 50mm x t2.7mm)</td>
+            </tr>
+            <tr>
+                <td >하이스날</td>
+                <td>하이스날</td>
+                <td>하이스날</td>
+            </tr>
+            <tr>
+                <td rowspan="2">톱날외경</td>
+                <td colspan="2">최대</td>
+                <td>305mm</td>
+                <td>380mm</td>
+                <td>480mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">최소</td>
+                <td>285mm</td>
+                <td>360mm</td>
+                <td>460mm</td>
+            </tr>
+            <tr>
+                <td colspan="3">톱날두께</td>
+                <td>1.5~2.5mm</td>
+                <td>2.0~3.0mm</td>
+                <td>2.0~3.0mm</td>
+            </tr>
+            <tr>
+                <td rowspan="2">날개수</td>
+                <td colspan="2">초경날</td>
+                <td>60~140 <br>
+                    (톱날사이즈에따라 다름)</td>
+                <td>60~160 <br>
+                    (톱날사이즈에따라 다름)</td>
+                <td>40~100 <br>
+                    (톱날사이즈에따라 다름)</td>
+            </tr>
+            <tr>
+                <td colspan="2">하이스날</td>
+                <td>100~300 <br>
+                    (톱날사이즈에따라 다름)</td>
+                <td>100~300 <br>
+                    (톱날사이즈에따라 다름)</td>
+                <td>100~300 <br>
+                    (톱날사이즈에따라 다름)</td>
+            </tr>
+            <tr>
+                <td rowspan="8" class="left">Cutting</td>
+                <td rowspan="3">절단조건</td>
+                <td colspan="2">주회전속도</td>
+                <td>45~176m/minx톱날지름 285mm</td>
+                <td>60~235m/minx톱날지름360mm</td>
+                <td>57~216m/minx톱날지름460mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">회전속도</td>
+                <td>50~197min <sup>-1</sup></td>
+                <td>53~208min <sup>-1</sup></td>
+                <td>39~149min <sup>-1</sup></td>
+            </tr>
+            <tr>
+                <td colspan="2">전달속도</td>
+                <td>0~30mm/sec</td>
+                <td>0~30mm/sec</td>
+                <td>0~30mm/sec</td>
+            </tr>
+            <tr>
+                <td colspan="3">톱날흔들림방지장치</td>
+                <td>2개(3개)</td>
+                <td>2개(3개)</td>
+                <td>2개(3개)</td>
+            </tr>
+            <tr>
+                <td colspan="3">톱날이동유<br>
+                    유효 스트로크</td>
+                    <td>125mm</td>
+                    <td>150mm</td>
+                    <td>175mm</td>
+            </tr>
+            <tr>
+                <td colspan="3">구동방식</td>
+                <td>AC서보모터 + 볼스크류</td>
+                <td>AC서보모터 + 볼스크류</td>
+                <td>AC서보모터 + 볼스크류</td>
+            </tr>
+            <tr>
+                <td colspan="3">절단방식</td>
+                <td>45°대각선 슬라이드절단</td>
+                <td>45°대각선 슬라이드절단</td>
+                <td>45°대각선 슬라이드절단</td>
+            </tr>
+            <tr>
+                <td colspan="3">톱날브레이크</td>
+                <td>파우더클러치식</td>
+                <td>파우더클러치식</td>
+                <td>파우더클러치식</td>
+            </tr>
+            <tr>
+                <td rowspan="7" class="left"> Sizing<br>
+                    Glipper</td>
+                <td colspan="3">구동방법</td>
+                <td>볼스크류 + AC서보모터</td>
+                <td>볼스크류 + AC서보모터</td>
+                <td>볼스크류 + AC서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="3">유효스트로크</td>
+                <td>705mm+최종스트로크10mm</td>
+                <td>705mm+최종스트로크10mm</td>
+                <td>735mm+최종스트로크20mm</td>
+            </tr>
+            <tr>
+                <td colspan="3">반송위치결정속도</td>
+                <td>30m/min</td>
+                <td>30m/min</td>
+                <td>20m/min</td>
+            </tr>
+            <tr>
+                <td colspan="3">최소위치결정
+                    측정방법<br></td>
+                <td>0.01mm</td>
+                <td>0.01mm</td>
+                <td>0.01mm</td>
+            </tr>
+            <tr>
+                <td colspan="3">그립위치</td>
+                <td>전체폭</td>
+                <td>전체폭</td>
+                <td>전체폭</td>
+            </tr>
+            <tr>
+                <td colspan="3">그립압</td>
+                <td>4.3kN</td>
+                <td>6.6kN</td>
+                <td>6.6kN</td>
+            </tr>
+            <tr>
+                <td colspan="3">흠집방지시스템</td>
+                <td>Floating 방식</td>
+                <td>Floating 방식</td>
+                <td>Floating 방식</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="left">Cutting<br>
+                    Fluid<br>
+                </td>
+                <td colspan="3">방식</td>
+                <td>미스트방식</td>
+                <td>미스트방식</td>
+                <td>미스트방식</td>
+            </tr>
+            <tr>
+                <td colspan="3">용량</td>
+                <td>1.8L</td>
+                <td>1.8L</td>
+                <td>1.8L</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="left">Driving<br>
+                    Motor</td>
+                    <td colspan="3">톱날구동모터용량</td>
+                    <td>7.5kW x 4P</td>
+                    <td>11kW x 4P</td>
+                    <td>11kW x 6P</td>
+            </tr>
+            <tr>
+                <td colspan="3">톱날이동모터용량</td>
+                <td>1.2kW AC서보모터</td>
+                <td>2.0kW AC서보모터</td>
+                <td>2.0kW AC서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="3">측정구동모터용량</td>
+                <td>0.8kW AC서보모터</td>
+                <td>0.8kW AC서보모터</td>
+                <td>0.5kW AC서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="3">유압용모터용량</td>
+                <td>1.5kW</td>
+                <td>1.5kW</td>
+                <td>1.5kW</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="left" >Hydraulic<br>
+                    drive<br>
+                    system</td>
+                <td colspan="3">용량</td>
+                <td>20L</td>
+                <td>20L</td>
+                <td>20L</td>
+            </tr>
+            <tr>
+                <td colspan="3">설정압력</td>
+                <td>5.0Mpa</td>
+                <td>5.0Mpa</td>
+                <td>5.0Mpa</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="left" >Air</td>
+                <td colspan="3">설정압력</td>
+                <td>0.5Mpa</td>
+                <td>0.5Mpa</td>
+                <td>0.5Mpa</td>
+            </tr>
+            <tr>
+                <td rowspan="2"class="left">Machine</td>
+                <td colspan="3">Size<br>
+                    (폭x넓이x높이)</td>
+                <td>2075mm x 1825mm x 1580mm</td>
+                <td>2122mm x 2015mm x 1790mm</td>
+                <td>2268mm x 2125mm x 1880mm</td>
+            </tr>
+            <tr>
+                <td colspan="3">무게</td>
+                <td>2000kg</td>
+                <td>2400kg</td>
+                <td>3000kg</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

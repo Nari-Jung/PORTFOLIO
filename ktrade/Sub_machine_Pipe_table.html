@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICATION</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        .en {font-family: 'Lato', sans-serif;}
+        body {width: 97%; margin: 5vh auto; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+        table,td,th {border: 1px solid #CECECE; border-collapse : collapse; line-height: 1.2; text-align: center; padding: 10px 0; box-sizing: border-box;}
+        .top {background: #324978; color: #fff; font-size: 25px; font-weight: bold; box-sizing: border-box; border: none; padding: 15px 0; }
+        .left {background: #B4B4B4; color: #fff;font-weight: bold; font-size: 20px;}
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <col style="width: 12.5%;">
+        <col style="width: 19%;">
+        <col style="width: 18.5%;">
+        <col style="width: 50%;">
+
+        <!-- 표에 단독으로 border를 지우고 싶을 때 <td>에 style="border: none;" 주면됩니다. -->
+        <thead>
+            <tr class="top">
+                <td colspan="3" style="border: none;">Item</td>
+                <td style="border: none;">Specifications</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="left">work</td>
+                <td rowspan="2">소재크기</td>
+                <td>1本</td>
+                <td>35~70mm ※1</td> 
+            </tr>
+            <tr>
+                <td>2本</td>
+                <td>10~35mm ※1</td>
+            </tr>
+            <tr>
+                <td colspan="2">소재길이</td>
+                <td>2500mm~6000mm (가공단위는 500mm)</td>
+            </tr>
+            <tr>
+                <td rowspan="7" class="left">cucular<br>
+                    saw</td>
+                <td colspan="2" rowspan="2"> 톱날종류</td>
+                <td>초경날</td>
+            </tr>
+            <tr>
+                <td>하이스날</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3">톱날외경</td>
+                <td>285mm(최대 315mm)</td>
+            </tr>
+            <tr>
+                <td>285mm : 10~35(2本) ~ 60.5(1本)</td>
+            </tr>
+            <tr>
+                <td>315mm : 10~35(2本) ~ 70(1本)</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날두께</td>
+                <td>1.5~2.5mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">날 개수</td>
+                <td>80~200개 (톱날사이즈에따라 다름)</td>
+            </tr>
+            <tr>
+                <td rowspan="12" class="left">cutting</td>
+                <td rowspan="3">절단조건</td>
+                <td> </td>
+                <td>80~450m/min</td>
+            </tr>
+            <tr>
+                <td>회전속도</td>
+                <td>104~624rpm</td>
+            </tr>
+            <tr>
+                <td>전달속도</td>
+                <td>0~40mm/sec</td>
+            </tr>
+            <tr>
+                <td colspan="2">절단폭</td>
+                <td>1.5~2.5mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날구동모터용량</td>
+                <td>3.7/5.5kW(연속30분정격) AC스핀들모터</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날흔들림방지장치</td>
+                <td>2개</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날이동유 유효 스트로크</td>
+                <td>200mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">구동방식</td>
+                <td>센서내장유압실린더+디지털유압서보</td>
+            </tr>
+            <tr>
+                <td colspan="2">절단방식</td>
+                <td>하부스윙절단</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날헤드감속비(比)</td>
+                <td>1/5.3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">바이스</td>
+                <td>바이스압</td>
+                <td>14.4kN(1472kgf)</td>
+            </tr>
+            <tr>
+                <td>구조</td>
+                <td>45°대각선원바이스</td>
+            </tr>
+            <tr>
+                <td rowspan="7" class="left"> Sizing<br>
+                    Glipper</td>
+                <td colspan="2">구동방법</td>
+                <td>볼스크류 + AC서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="2">측정구동모터용량</td>
+                <td>5.5kW AC서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="2">유효 스트로크</td>
+                <td>2005mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">반송위치결정속도</td>
+                <td>130m/min</td>
+            </tr>
+            <tr>
+                <td colspan="2">최소위치결정측정방법</td>
+                <td>0.01mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">그립위치</td>
+                <td>전체폭</td>
+            </tr>
+            <tr>
+                <td colspan="2">그립압</td>
+                <td>4.15kN (424kgf)</td>
+            </tr>
+            <tr>
+                <td rowspan="5"  class="left">Loading<br>
+                    Device</td>
+                <td rowspan="3">공급장치</td>
+                <td>방식</td>
+                <td>미스트방식</td>
+            </tr>
+            <tr>
+                <td>최대적재량</td>
+                <td>3000kg</td>
+            </tr>
+            <tr>
+                <td>소재길이</td>
+                <td>2500~6000mm</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Auto Loader</td>
+                <td>방식</td>
+                <td>Arm 이동식</td>
+            </tr>
+            <tr>
+                <td>그 외</td>
+                <td>파이프사이즈 및 가공수변경시 자동조절</td>
+            </tr>
+            <tr>
+                <td rowspan="11"  class="left">Option</td>
+                <td colspan="2">슬라이드테이블스트로크</td>
+                <td>250mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">제품길이</td>
+                <td>100~3000mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">방출구</td>
+                <td>2곳</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3">단재 및 제품</td>
+                <td>10~100mm</td>
+            </tr>
+            <tr>
+                <td>슬라이드테이블이 후퇴함으로 제품낙하</td>
+            </tr>
+            <tr>
+                <td>제품,단재는 본 기계 슈터로 선별</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3">제품길이</td>
+                <td>100~3000mm</td>
+            </tr>
+            <tr>
+                <td>푸셔전진으로 디버링장치축으로 방출</td>
+            </tr>
+            <tr>
+                <td>검수장치가 장착된 디버링장치의 경우 120mm~</td>
+            </tr>
+            <tr>
+                <td colspan="2">잔재</td>
+                <td>45~200mm미만(슬라이드테이블의 후퇴로 낙하)</td>
+            </tr>
+            <tr>
+                <td colspan="3">200~2600mm(푸셔가 후퇴하면서 반대쪽 디버링장치축에 방출)</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="left">Other</td>
+                <td colspan="2">팁 수리</td>
+                <td>Chip bucket (기계측면에 1곳)</td>
+            </tr>
+            <tr>
+                <td colspan="2">전원전압</td>
+                <td>AC3 200/220V</td>
+            </tr>
+            <tr>
+                <td colspan="2">공기압</td>
+                <td>0.5Mpa(5kgf/cm2)</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="left">Elctrical<br>
+                    specification</td>
+                <td colspan="2">제어장치</td>
+                <td>Sequencer</td>
+            </tr>
+            <tr>
+                <td colspan="2">제품데이터종류(순차No.)</td>
+                <td>6종류</td>
+            </tr>
+            <tr>
+                <td colspan="2">가공데이터종류(실행데이터No.)</td>
+                <td>9종류</td>
+            </tr>
+            <tr>
+                <td colspan="2">표시기</td>
+                <td>10인치EL판넬(컬러터치판넬)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

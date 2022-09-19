@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICATION</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        .en {font-family: 'Lato', sans-serif;}
+        body {width: 97%; margin: 5vh auto; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+        table,td,th {border: 1px solid #CECECE; border-collapse : collapse; line-height: 1.2; text-align: center; padding: 10px 0; box-sizing: border-box;}
+        .top {background: #324978; color: #fff; font-size: 25px; font-weight: bold;box-sizing: border-box; border: none; padding: 15px 0; }
+        .left {background: #B4B4B4; color: #fff;font-weight: bold; font-size: 20px;}
+    </style>
+</head>
+<body>
+    <table  style="width: 100%;">
+        <col style="width: 9.4%;">
+        <col style="width: 12%;">
+        <col style="width: 28.6%;">
+        <col style="width: 50%;">
+        <!-- 표에 단독으로 border를 지우고 싶을 때 <td>에 style="border: none;" 주면됩니다. -->
+        <thead>
+            <tr class="top">
+                <td colspan="3" style="border: none;">Item</td>
+                <td style="border: none;">Specifications</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8" class="left">work</td>
+                <td colspan="2">소재넓이</td>
+                <td>80mm~400mm</td>
+            </tr>
+            <tr>
+                <td rowspan="4">길이</td>
+                <td>최소</td>
+                <td>1300mm</td>
+            </tr>
+            <tr>
+                <td>최소(이음용접소재)</td>
+                <td>600mm+제품길이</td>
+            </tr>
+            <tr>
+                <td>최소(일반절단)</td>
+                <td>25mm or more in both loading & unloading side</td>
+            </tr>
+            <tr>
+                <td>최대</td>
+                <td>12000mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">두께</td>
+                <td>12~80mm(여러장 동시절단가능)</td>
+            </tr>
+            <tr>
+                <td colspan="2">최대소재질량</td>
+                <td>2000kg</td>
+            </tr>
+            <tr>
+                <td colspan="2">소재종류</td>
+                <td>일반구조용 철판</td>
+            </tr>
+            <tr>
+                <td rowspan="15" class="left">cutting</td>
+                <td colspan="2">절단방식</td>
+                <td>가로슬라이딩 절단</td>
+            </tr>
+            <tr>
+                <td rowspan="2">초경날</td>
+                <td>크기</td>
+                <td>600x3.0t~4.0mm</td>
+            </tr>
+            <tr>
+                <td>날수</td>
+                <td>80~120</td>
+            </tr>
+            <tr>
+                <td rowspan="3">절단조건</td>
+                <td>주속</td>
+                <td>100~300m/min</td>
+            </tr>
+            <tr>
+                <td>회전속도</td>
+                <td>59~159rpm(인버터로인한 역변환 없음)</td>
+            </tr>
+            <tr>
+                <td>전달속도</td>
+                <td>3.5~15.9mm/sec</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날두께</td>
+                <td>3.0~4.0mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날이송모터용량</td>
+                <td>2.0kW AC 서보모터</td>
+            </tr>
+            <tr>
+                <td colspan="2">톱날 이동축 유효 스트로크</td>
+                <td>500mm(톱날에따라 750mm까지 가능)</td>
+            </tr>
+            <tr>
+                <td colspan="2">구동방식</td>
+                <td>AC 서보모터 + 볼스크류</td>
+            </tr>
+            <tr>
+                <td colspan="2">Coolant</td>
+                <td>Clean Mist(3L)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">바이스압</td>
+                <td>종바이스</td>
+                <td>4.3kN(작업에 따라 감압가능)</td>
+            </tr>
+            <tr>
+                <td>횡바이스</td>
+                <td>6.2kN(작업에 따라 감압가능)</td>
+            </tr>
+            <tr>
+                <td colspan="2">유압용 모터용량</td>
+                <td>2.2Kw</td>
+            </tr>
+            <tr>
+                <td colspan="2">유압설정압력</td>
+                <td>5Mpa(50kgf/cm2)</td>
+            </tr>
+            <tr>
+                <td rowspan="5" class="left">Sizing<br>
+                    Gripper</td>
+                <td colspan="2">유효스트로크</td>
+                <td>1000mm</td>
+            </tr>
+            <tr>
+                <td colspan="2">구동방식</td>
+                <td>AC서보모터 + 볼스크류</td>
+            </tr>
+            <tr>
+                <td colspan="2">구동모터용량</td>
+                <td>2.2kW</td>
+            </tr>
+            <tr>
+                <td colspan="2">그립압</td>
+                <td>6.6kN(673kgf)x2</td>
+            </tr>
+            <tr>
+                <td colspan="2">위치결정속도</td>
+                <td>12m/min</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

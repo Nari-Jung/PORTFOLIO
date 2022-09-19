@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lilita+One&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+.en {font-family: 'Lilita One', cursive;}
+.en_t {font-family: 'Calistoga', cursive;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+.wrap {width: 100%; background-color: #fbf4e4;}
+header {width: 100%; background: #fbf4e4; position: fixed; z-index: 10000;}
+.innerHeader.on {background: #fbf4e4; height: 340px; transition: all 0.3s;}
+header .innerHeader {width: 1400px; height: 120px; line-height: 120px; margin: 0 auto; display: flex; justify-content: space-between; transition: all 0.3s;}
+header .innerHeader h1 {width: 40%;}
+header .innerHeader nav {width: 60%;}
+header .innerHeader .menu {display: flex; width: 100%; justify-content: flex-end;}
+header .innerHeader .menu > li {width: 20%; text-align: left; font-weight: bold; font-size: 20px;}
+header .innerHeader .menu > li:nth-child(3) {width: 18%;}
+header .innerHeader .menu > li:last-child {width: 10%;}
+header .innerHeader .menu > li > a {display: inline-block; position: relative;}
+header .innerHeader .menu > li > a::after {content: ''; width: 0%; height: 2.5px; background: #f43b00; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: all 0.3s;}
+header .innerHeader .menu > li:hover > a::after {width: 100%; transition: all 0.3s;}
+header .innerHeader .menu > li:hover > a {color: #f43b00;}
+
+header .innerHeader .menu > li > .subMenu {width: 100%; text-align: left; display: none; margin-top:30px;}
+header .innerHeader .menu > li > .subMenu > li {width: 100%; font-weight: 500; box-sizing: border-box;}
+header .innerHeader .menu > li > .subMenu > li > a {display: block; line-height: 50px;}
+header .innerHeader .menu > li > .subMenu > li > a:hover {color: #f43b00;}
+
+/* visual */
+.visual {width: 100%; height: 1500px; background: #fbf4e4; overflow: hidden;}
+.visual .inner {width: 1400px; margin: 130px auto; position: relative;}
+.visual .inner h2 {font-size: 120px; color: #f43b00; position: absolute; top: 110px; right: 0; z-index: 1000; line-height: 1.0; font-weight: normal;}
+.visual .inner h2 span {display: block; letter-spacing: 8px;}
+.visual .inner h2 span:last-child {-webkit-text-stroke: 2.5px #f43b00; -webkit-text-fill-color: transparent;}
+
+.visual .inner .slide {width: 100%;}
+.visual .inner .slide .img {width: 1000px; height: 100%; position: relative; left: 0; top: 300px;}
+.visual .inner .slide .img img {width: 100%;}
+
+/* .visual .inner .textSlide {position: relative; top: -330px; left: 100px; font-size: 20px; color: #f43b00;}
+.visual .inner .textSlide .text {font-weight: 400; margin-bottom: 20px;}
+.visual .inner .textSlide .btn {font-weight: bold; position: relative; display: block; width: 100%; height: 100%;}
+.visual .inner .textSlide li {width: 300px;}
+.visual .inner .textSlide li .btn::after {content: ''; position: absolute; bottom: 0; left: 0; background: #f43b00; width: 140px; height: 2px;}
+.visual .inner .textSlide li:nth-child(3) .btn::after {width: 117px;}
+.visual .inner .textSlide li:nth-child(4) .btn::after {width: 117px;}
+.visual .inner .textSlide li:nth-child(6) .btn::after {width: 160px;} */
+
+.visual .inner .slide .slick-dots {display: flex; position: absolute; top: -100px; gap: 30px; border: none;}
+.visual .inner .slide .slick-dots button {border: none; position: relative;}
+.visual .inner .slide .slick-dots button::after {content: ''; position: absolute; width: 10px; height: 10px; background: #f43b00; border-radius: 50%; left: 100px; opacity: 0.2; cursor: pointer;}
+.visual .inner .slick-dots .slick-active button::after {background: #f43b00; opacity: 1;}
+.visual .inner .textSlide .slick-dots {opacity: 0;}
+
+/* section .life */
+.life {width: 100%; overflow: hidden; position: relative; z-index: 1;}
+.life .inner {width: 1400px; margin: 260px auto; text-align: center; color: #f43b00;}
+.life .inner h2 {font-size: 36px; margin-bottom: 32px;}
+.life .inner .title {font-family: 'Calistoga', cursive; font-size: 120px; letter-spacing: 5px; font-weight: bold; margin-bottom: 56px;}
+.life .inner .text {font-size: 20px; line-height: 1.4;}
+
+.life .move span.c img {width: 20%; position: absolute; bottom: 15%; left: -5%; z-index: -1;}
+.life .move span.b img {width: 28%; position: absolute; left: 80%; top: 0; z-index: -1;}
+.life .move span.s img {width: 8%; position: absolute; bottom: 7%; left: 20%; z-index: -1;}
+
+.dal {width: 100%; height: 1150px; background: transparent url(../img/bg_dal_story.svg) no-repeat center bottom; overflow: hidden;}
+.dal .inner {width: 1400px; margin: 0 auto; text-align: center;}
+.dal .inner h2 {font-size: 36px; color: #2a31a0; margin-top: 200px;}
+.dal .inner .title {font-size: 64px; color: #2a31a0; font-weight: bold; margin-top: 34px;}
+
+/* .splitting animation */
+.motion .char {
+    animation: lifeMotion 0.4s cubic-bezier(.5, 0, .5, 1) both;
+    animation-delay: calc(50ms * var(--char-index));
+}
+
+@keyframes lifeMotion {
+    0% {transform: translateY(30px); opacity: 0;}
+    30% {transform: translateY(30px); opacity: 0;}
+}
+
+.play {width: 100%; overflow: hidden; margin: 180px 0; position: relative;}
+.play .inner {width: 1400px; margin: 0 auto;}
+.play .inner .box {text-align: center; color: #f43b00;}
+.play .inner .box h2 {font-size: 64px; margin-bottom: 32px; line-height: 1.4; letter-spacing: -4px;}
+.play .inner .box .text {font-size: 20px;}
+
+.play .imgBox {width: 100%; display: flex; justify-content: space-between; margin-bottom: 150px;}
+.play svg {z-index: 100; width: 35%; position: absolute; top: 300px; left: -210px; fill: none;}
+.play svg:nth-child(2) { left: 650px; width: 30%; top: 350px;}
+.play svg:nth-child(3) { left: 1450px; width: 28%; top: 200px;}
+#play1{stroke-dasharray: 1500; stroke-dashoffset: 0; animation: pAni 4s ease-in-out alternate infinite;}
+#play2{stroke-dasharray: 1500; stroke-dashoffset: 0; animation: pAni 4s ease-in-out alternate infinite;}
+#play3{stroke-dasharray: 1500; stroke-dashoffset: 0; animation: pAni 4s ease-in-out alternate infinite;}
+@keyframes pAni {
+        0% {
+            stroke-dashoffset: 1500;
+            fill-opacity: 0;
+        }
+        20% {
+            fill-opacity: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+            stroke-opacity: 1;
+            fill-opacity: 1;
+        }
+    }
+    
+
+.play .imgBox span {display: block; width: 100%;}
+.play .imgBox .square {width: 35%; height: 370px; transform: translate(-27%,7%); clip-path: polygon(100% 0%,100% 100% , 0 100%, 0 0, 0 0); overflow: hidden; transition: all 1s; position: relative;}
+.play .imgBox .square img {width: 100%; height: 370px; clip-path: polygon(100% 0%,100% 100% , 0 100%, 0 0, 0 0); transition: all 1s;}
+.play .imgBox .square:hover img {transform: scale(1.2);}
+.play .imgBox .polygon {width: 35%; height: 500px; transform: translate(25%,25%); clip-path: polygon(80% 0%,100% 8%, 100% 100% , 0 100%, 0 0, 0 30%); overflow: hidden; transition: all 1s;}
+.play .imgBox .polygon img {width: 100%; height: 500px; clip-path: polygon(80% 0%,100% 8%, 100% 100% , 0 100%, 0 0, 0 30%); overflow: hidden; transition: all 1s;}
+.play .imgBox .polygon:hover img {transform: scale(1.2);}
+.play .imgBox .round {width: 50%; clip-path: circle(245px at center); overflow: hidden; position: relative; right: -220px; top: -100px;}
+.play .imgBox .round img {width: 100%; clip-path: circle(245px at center); transition: all 1s;}
+.play .imgBox .round:hover img {transform: scale(1.2); transition: all 1s;}
+
+.experience {width: 100%; overflow: hidden; position: relative;}
+.experience .textBox {width: 1400px; margin: 0 auto; text-align: center; color: #f43b00;}
+.experience .textBox h2 {font-size: 64px; margin-bottom: 32px;}
+.experience .textBox p {font-size: 20px; padding-bottom: 350px;}
+.bg_f {background: #fff; padding: 110px 0; width: 100%;}
+.experience .cup {background: transparent url(../img/menu.png) repeat-x center top; background-size: auto 375px; z-index: 1000; animation: cupAni 20s linear infinite; padding: 300px 100%; position: absolute; top: 50%; }
+@keyframes cupAni {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 2426px 0px;}
+}
+
+.new {background: #fff; width: 100%; overflow: hidden; position: relative; padding-bottom: 170px;}
+.new .textBox {color: #f43b00; text-align: center; margin-top: 250px;}
+.new .textBox h2 {font-size: 64px; margin-bottom: 32px;}
+.new .textBox p {font-size: 20px; margin-bottom: 150px;}
+.new .ulBox {width: 100%; display: flex; gap: 350px; position: absolute; bottom: 350px;}
+.new .ulBox ul {width: 100%; display: flex; justify-content: space-between;}
+.new .ulBox .left li:nth-child(2),.new .ulBox .left li:nth-child(4) {transform: translateY(-50px);}
+.new .ulBox .right li:nth-child(1),.new .ulBox .right li:nth-child(3) {transform: translateY(-50px);}
+.new .ulBox .left {transform: translateX(-5%);}
+.new .ulBox .right {transform: translateX(5%);}
+
+.new .phone {display: flex; justify-content: center; position: relative;}
+.new .phone .phoneImg {position: absolute; top: -70px;}
+
+
+.supporter {width: 100%; background: #2a31a0 url(../img/bg_supporter.png) no-repeat center/cover; background-size: 110% auto; padding-bottom: 150px;}
+.supporter .inner {width: 1400px; margin: auto; text-align: center; color: #fff;}
+.supporter .inner h2 {font-size: 64px; padding-top: 150px; margin-bottom: 20px;}
+.supporter .inner p {font-size: 20px; line-height: 1.6; margin-bottom: 68px;}
+.supporter .inner .btn {display: block; width: 300px; height: 80px; background: #f43b00; font-size: 20px; line-height: 80px; border-radius: 15px; margin: auto;}
+
+footer {background: #fff;}
+footer .f_inner {width: 1400px; margin: auto;}
+footer .topBox {display: flex; justify-content: space-between; padding: 100px 0 50px; border-bottom: 1px solid #ddd;}
+footer .topBox li .f_logo img {width: 180%;}
+footer .topBox li .tit {font-size: 18px; margin-bottom: 30px; color: #000;}
+footer .topBox li p {font-size: 16px; margin-bottom: 15px; color: #222222b3;}
+footer .topBox li .red {color: #f43b00;}
+footer .topBox li .red a:hover {color: #f43b00;}
+footer .topBox li .red a::after {content: ''; width: 0%; height: 1.5px; background: #f43b00; position: absolute; bottom: -4px; left: 0; transition: all 0.3s;}
+footer .topBox li .red a:hover::after {width: 100%; transition: all 0.3s;}
+
+footer .topBox li p a {display: inline-block; position: relative;}
+footer .topBox li p a:hover {color: #000;}
+footer .topBox li p a::after {content: ''; width: 0%; height: 1.5px; background: #000; position: absolute; bottom: -4px; left: 0; transition: all 0.3s;}
+footer .topBox li p a:hover::after {width: 100%; transition: all 0.3s;}
+
+footer .bottomBox {display: flex; justify-content: space-between; padding: 50px 0 150px; }
+footer .bottomBox li:first-child {font-size: 18px; font-weight: bold; position: relative;}
+footer .bottomBox li:first-child span {margin-left: 170px;}
+footer .bottomBox li:first-child::after {content: ''; background: #000; width: 100%; height: 3px; position: absolute; top: 50px; left: 0;}
+footer .bottomBox .copy {font-size: 14px; color: #22222266; font-weight: 500;}
+footer .bottomBox .copy span {color: #000;}
+footer .bottomBox .link {display: flex; gap: 18px; margin-top: 40px; position: relative;}
+footer .bottomBox .link a {display: block; width: 100%; height: 100%; border: 1px solid #ddd; text-align: center; padding: 15px 20px; border-radius: 30px;}
+footer .bottomBox .link span {display: block; width: 100%; height: 100%; transform: translateY(-45px);}
+
+/* top */
+.goTop {position: fixed; font-size: 47px; bottom: 8%; right: 5%; color: #f43b00; display: none; z-index: 1000;}
+
+.scroll-down header.fixed{top: -120px;}
+.scroll-up header.fixed{top: 0}
+
+
+
+
+
+
+
+
