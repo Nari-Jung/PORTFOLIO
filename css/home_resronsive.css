@@ -93,18 +93,15 @@ header.on {background: #ff687d; transition: opacity 0.3s ease;}
 .about .inner .imgBox {width: 50%;}
 .about .inner .imgBox .img {width: 70%; margin: auto; position: relative; z-index: 100;}
 .about .inner .imgBox .img img {width: 100%;}
-/* .about .inner .imgBox .backImg {position: absolute; top: 0rem;} */
-
-/* .about .inner .imgBox .backImg {position: absolute; top: -3.125rem; left: -20rem; background: url(../img/home_aboutimg_back.png) no-repeat 100% 100%/60%; width: 100%; height: 100%;} */
 .about .inner .imgBox .img::before {content: ''; position: absolute; top: -3.125rem; left: -20rem; background: url(../img/home_aboutimg_back.png) no-repeat 100% 100%/60%; width: 100%; height: 100%; z-index: -1;}
 
 .about .inner .textBox {width: 50%;}
 .about .inner .textBox .slogan {font-size: 2.188rem; margin-bottom: 1.875rem;}
 .about .inner .textBox .desc p {margin-bottom: 0.938rem; color: #505050;}
 
-.animated-title {position: relative; width: 100%; height: 8.75rem; overflow: hidden; margin-top: 9.375rem;}
+.animated-title {position: relative; width: 100%; height: 9.75rem; line-height: 9.75rem; overflow: hidden; margin-top: 9.375rem;}
 .animated-title .track {position: absolute; white-space: nowrap; will-change: transform; animation: marquee 60s linear infinite; top: 0px;}
-.animated-title .track .content {font-size: 8.125rem; color: #fe526a; -webkit-text-stroke: 0.125rem; -webkit-text-fill-color: transparent; padding: 1.4rem 0 0 0;}
+.animated-title .track .content {font-size: 8.125rem; color: #fe526a; -webkit-text-stroke: 0.125rem; -webkit-text-fill-color: transparent;}
 @keyframes marquee {
   from { transform: translateX(0);}
   to { transform: translateX(-50%);}
