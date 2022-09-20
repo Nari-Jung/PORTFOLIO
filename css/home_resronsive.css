@@ -219,15 +219,35 @@ footer .air .air3 img {width: 100%;}
 .goTop {position: fixed; right: 6.25rem; bottom: 5rem; font-size: 3.125rem; color: #ff687d; z-index: 100000;}
 .goTop::after {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; width: 80%; height: 50%; z-index: -1; border-radius: 50%;}
 
-/* slide-up animation */
+/* slide animation */
 .motionUp {
   animation: up 0.1s both;
+  animation-delay: 0s;
+}
+
+.motionLeft {
+  animation: left 0.1s both;
+  animation-delay: 0s;
+}
+
+.motionRight {
+  animation: right 0.1s both;
   animation-delay: 0s;
 }
 
 @keyframes up {
   0% {transform: translateY(200px); opacity: 0;}
   30% {transform: translateY(200px); opacity: 0;}
+}
+
+@keyframes left {
+  0% {transform: translateX(-200px); opacity: 0;}
+  30% {transform: translateX(-200px); opacity: 0;}
+}
+
+@keyframes right {
+  0% {transform: translateX(200px); opacity: 0;}
+  30% {transform: translateX(200px); opacity: 0;}
 }
 
 /* splitting animation */
