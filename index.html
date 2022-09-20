@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/home_resronsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/splitting-cells.css">
     <link rel="stylesheet" href="css/splitting.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -18,7 +17,6 @@
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="js/gsap.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/splitting.js"></script>
 </head>
 <body>
@@ -64,7 +62,7 @@
             </div>
         </header>
         <section class="visual">
-            <div class="mainTitle animate" data-animate="motion">
+            <div class="mainTitle animate" data-animate="motion char">
             <h2 class="en" data-splitting>WEB PUBLISHER<br>PORTFOLIO</h2>
             </div>
             <div class="roundBox mainRound">
@@ -77,10 +75,10 @@
         </section>
         <section class="about">
             <div class="inner">
-                <div class="imgBox" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
+                <div class="imgBox animate" data-animate="fadeInLeft" data-duration="1s" data-delay="0s">
                     <div class="img"><img src="img/home_aboutme.png" alt="내사진"></div>
                 </div>
-                <div class="textBox" data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
+                <div class="textBox animate" data-animate="fadeInRight" data-duration="1s" data-delay="0s">
                     <p class="slogan">“기본이 탄탄한 퍼블리싱<br>끈기를 갖춘 퍼블리셔입니다”</p>
                     <div class="desc">
                     <p>사용자들에게 편리함과 즐거운 경험을 주는 웹퍼블리셔가 되고 싶은 정나리입니다.</p>
@@ -148,7 +146,7 @@
                     <p>저의 코딩을 소개합니다.<br>기본에 충실해서 작업했어요<br>기존 웹사이트 클론 코딩부터<br>리뉴얼과 반응형까지 보실 수 있어요</p>
                     <a href="gallery.html" class="btn en2"><img src="img/btn.png" alt="갤러리이동버튼"><span>LEAD MORE</span></a>
                 </div>
-                <div class="swiper-container swiper1" data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
+                <div class="swiper-container swiper1 animate" data-animate="fadeInRight" data-duration="1s" data-delay="0s">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="sub_musign.html" target="blank"><p class="img"><img src="img/home_coding_musign.png" alt="뮤자인 컴퓨터목업"></p></a>
@@ -188,25 +186,25 @@
                 </div>
                 <div class="swiper-container swiper2">
                     <ul class="swiper-wrapper">
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="000">
+                        <li class="swiper-slide animate" data-animate="motionUp">
                             <a href="/pdf/ncs1.pdf" target="blank"><p class="img"><img src="img/ncs1.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                        <li class="swiper-slide animate" data-animate="motionUp" data-delay="0.3s">
                             <a href="/pdf/ncs2.pdf" target="blank"><p class="img"><img src="img/ncs2.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <li class="swiper-slide animate" data-animate="motionUp" data-delay="0.6s">
                             <a href="/pdf/ncs3.pdf" target="blank"><p class="img"><img src="img/ncs3.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="000">
+                        <li class="swiper-slide animate" data-animate="motionUp">
                             <a href="/pdf/ncs4.pdf" target="blank"><p class="img"><img src="img/ncs4.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                        <li class="swiper-slide animate" data-animate="motionUp">
                             <a href="/pdf/ncs5.pdf" target="blank"><p class="img"><img src="img/ncs5.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <li class="swiper-slide animate" data-animate="motionUp">
                             <a href="/pdf/ncs6.pdf" target="blank"><p class="img"><img src="img/ncs6.png" alt="ncs ppt표지"></p></a>
                         </li>
-                        <li class="swiper-slide" data-aos="fade-up" data-aos-duration="600" data-aos-delay="000">
+                        <li class="swiper-slide animate" data-animate="motionUp">
                             <a href="/pdf/ncs7.pdf" target="blank"><p class="img"><img src="img/ncs7.png" alt="ncs ppt표지"></p></a>
                         </li>
                     </ul>
@@ -222,7 +220,7 @@
                     <h2 class="title en">MY WORK LOG</h2>
                     <p>이 과정을 공부하고 포트폴리오를 작업하면서 저의 일상을 담았습니다</p>
                 </div>
-                <div class="video" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="video animate" data-animate="motionUp">
                     <video controls width="900px">
                         <source src="img/logg.mp4"type="video/mp4">
                     </video>
@@ -239,7 +237,7 @@
                     <p>마지막으로 포토샵과 일러스트를<br>활용한 작업물도 보여드릴게요<br>코딩뿐만 아니라 디자인도 잘 할 수 있어요<br>클릭하시면 더 많은 작업물을 보실 수 있습니다.</p>
                     <a href="gallery.html?graphic" class="btn en2"><img src="img/btn.png" alt="그래픽디자인 이동버튼"><span>LEAD MORE</span></a>
                 </div>
-                <div class="graphicBox" data-aos="fade-left" data-aos-duration="600" data-aos-delay="100">
+                <div class="graphicBox animate" data-animate="fadeInRight" data-duration="0.8s" data-delay="0s">
                     <p class="img"><a href="gallery.html?graphic"><img src="img/home_gall_sticker.png" alt="스티커디자인 이미지"></a></p>
                     <p class="backImg"><img src="img/home_graphicimg_back.png" alt="배경 도형"></p>
                 </div>
@@ -317,8 +315,6 @@
         }
         });
 
-    AOS.init();
-
-    Splitting();
+        Splitting();
 </script>
 </html>

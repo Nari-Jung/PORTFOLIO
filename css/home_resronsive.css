@@ -219,7 +219,18 @@ footer .air .air3 img {width: 100%;}
 .goTop {position: fixed; right: 6.25rem; bottom: 5rem; font-size: 3.125rem; color: #ff687d; z-index: 100000;}
 .goTop::after {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; width: 80%; height: 50%; z-index: -1; border-radius: 50%;}
 
-/* .splitting animation */
+/* slide-up animation */
+.motionUp {
+  animation: up 0.1s both;
+  animation-delay: 0s;
+}
+
+@keyframes up {
+  0% {transform: translateY(200px); opacity: 0;}
+  30% {transform: translateY(200px); opacity: 0;}
+}
+
+/* splitting animation */
 .motion .char {
   animation: jumping 0.4s cubic-bezier(.5, 0, .5, 1) both;
   animation-delay: calc(50ms * var(--char-index));
@@ -240,6 +251,7 @@ footer .air .air3 img {width: 100%;}
   animation-delay: 0.1s;
 }
 
+
 @keyframes jumping {
   0% {top: 0;}
   50% {top: -15px;}
@@ -249,7 +261,6 @@ footer .air .air3 img {width: 100%;}
 @keyframes air {
   0% {transform: translate(-100px, 150px); opacity: 0;}
   30% {transform: translate(-50px, 70px); opacity: 0;}
-
 }
 
 @keyframes air2 {
