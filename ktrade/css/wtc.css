@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap'); 
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* layout */
+.en {font-family: 'Lato', sans-serif;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+
+/* header */
+.wrap {width: 100%; overflow: hidden; position: relative;}
+header {width: 100%; height: 93px; line-height: 100px; position: fixed; z-index: 100; background: rgba(2, 0, 22, 0.747);}
+header .innerHeader {width: 1400px; margin: 0 auto; overflow: hidden; box-sizing: border-box; display: flex;}
+header .innerHeader .logo {width: 40%;}
+header .innerHeader .logo a {display: block; width: 30%; height: 100%;}
+header .innerHeader .logo a img {width: 100%;}
+header .innerHeader .menu {width: 60%;}
+header .innerHeader .menu ul {width: 100%; display: flex; text-align: center;}
+header .innerHeader .menu ul li {color: #fff; position: relative; } 
+header .innerHeader .menu ul li:nth-child(1) {width: 20%;}
+header .innerHeader .menu ul li:nth-child(2) {width: 30%;}
+header .innerHeader .menu ul li:nth-child(3) {width: 30%;}
+header .innerHeader .menu ul li:nth-child(4) {width: 20%;}
+header .innerHeader .menu ul li a {display: block; width: 100%; font-size: 18px;}
+
+header .innerHeader > .menu > ul > li > a::after {content: ''; position: absolute; width: 0%; height: 2px; background: rgb(189, 189, 189); top: 90px; left: 36%; transition: all 0.5s;}
+
+header .innerHeader > .menu > ul > li:nth-child(1):hover > a::after {left: 36%; width: 28%; transition: all 0.5s;}
+header .innerHeader > .menu > ul > li:nth-child(2):hover > a::after {left: 36%; width: 25%; transition: all 0.5s;}
+header .innerHeader > .menu > ul > li:nth-child(3):hover > a::after {left: 36%; width: 25%; transition: all 0.5s;}
+header .innerHeader > .menu > ul > li:nth-child(4):hover > a::after {left: 36%; width: 28%; transition: all 0.5s;}
+
+.innerHeader .menu ul li .subMenu {position: relative; width: 100%; flex-direction: column; z-index: 100; display: none;}
+.innerHeader .menu ul li .subMenu li {color:rgb(189, 189, 189); width:100%; text-align: center;}
+.innerHeader .menu ul li .subMenu > li:last-child {margin-bottom: 50px;}
+.innerHeader .menu ul li .subMenu > li > a {display: block; width: 100%; height: 100%; line-height:70px;}
+.innerHeader .menu ul li .subMenu > li:hover a {color: #fff;}
+.innerHeader .menu ul:hover li .subMenu {top: 0; display: contents;}
+
+.innerHeader .menu:hover::after {content: ''; position: absolute; width: 100%; height: 260px; background: rgba(2, 0, 22, 0.747); top: 93px; right: 0; z-index: -1;}
+
+
+/* visual */
+.visual {width: 100%; height: 500px; background: url(../img/banner.png) no-repeat center/cover; position: relative;}
+.visual h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 60px; color: #fff; font-weight: 400;}
+
+
+
+/* category */
+.category {width: 100%; border: 1px solid #AEAEAE; height: 70px;}
+.category .inner {width: 1400px; margin: 0 auto; display: flex; position: relative;}
+.category .inner .home {width: 5%;}
+.category .inner .home > a {display: block; width: 100%; border-left: 1px solid #9D9D9D; border-right: 1px solid #9D9D9D;}
+.category .inner .home > a img {width: 100%;}
+.category .inner > ul {display: flex; width: 40%; font-size: 18px; border-top: none;}
+.category .inner > ul > li {width: 100%; position: relative; border-right: 1px solid #9D9D9D; line-height: 70px; box-sizing: border-box;}
+.category .inner > ul > li:nth-child(1) {width: 50%; padding-left: 20px;}
+.category .inner > ul > li:nth-child(2) {width: 50%; border-right:1px solid #9D9D9D; }
+.category .inner > ul > li > a {position:relative; display: block; width: 100%; padding-left: 20px; box-sizing: border-box;}
+.category .inner > ul > li > a > span {position: absolute; right: 10%; top: 50%; transform: translateY(-50%);}
+.category .inner > ul > li:nth-child(2) > .menu {display: none; background: #fff;}
+.category .inner > ul > li:nth-child(2) > .menu li {width: 100%; border-bottom: 1px solid #9D9D9D;}
+.category .inner > ul > li:nth-child(2) > .menu li:nth-child(1) {border-top: 1px solid #9D9D9D;}
+.category .inner > ul > li:nth-child(2) > .menu li a {display: block; width: 100%; padding-left: 20px; line-height: 70px; box-sizing: border-box;}
+.category .inner > ul > li:nth-child(2) > .menu.on {display: block !important;}
+
+.category .inner > ul > li > .menu li:hover a {color: rgb(126, 126, 126); transition: all 0.3s;}
+
+
+/* contents top*/
+.contents {width: 100%; overflow: hidden; margin-bottom: 190px;}
+.contents .inner {width: 1400px; box-sizing: border-box; margin: 120px auto 0;}
+.contents .inner .top {margin-bottom: 120px;}
+.contents .inner .top h2 {font-size: 36px; font-weight: 400; margin-bottom: 80px; position: relative;}
+.contents .inner .top h2::before {content: ''; width: 172px; height: 1px; background: #CBCBCB; position: absolute; top: 66px;}
+
+.contents .inner .top .txt {margin: 24px 0 20px;}
+.contents .inner .top .txt h3 {font-size: 28px; font-weight: 400; margin-bottom: 20px;}
+.contents .inner .top .txt h3 i {margin-right: 8px;}
+.contents .inner .top .txt p {font-size: 20px; float: left; margin-right: 23px;}
+.contents .inner .top .txt p span {font-family: 'Lato' , sans-serif; font-size: 20px; background: #0A244F; padding: 4px 9px; color: #FFF; margin-right: 23px; display: inline-block;}
+
+
+
+/* contents bottom */
+.contents .inner .bottom {width: 100%; box-sizing: border-box; margin-bottom: 190px;}
+.contents .inner .bottom li {float: left;}
+.contents .inner .bottom li h2 {font-size: 36px; font-weight: 400; margin-bottom: 80px; position: relative;}
+.contents .inner .bottom li h2::before {content: ''; width: 172px; height: 1px; background: #CBCBCB; position: absolute; top: 66px;}
+.contents .inner .bottom li:first-child {margin-right: 2%; width: 49%;}
+.contents .inner .bottom li:last-child {width: 49%;}
+.contents .inner .bottom li .txt {margin-top: 24px;}
+
+.contents .inner .bottom li .txt h3 {font-size: 25px; font-weight: 400; margin-bottom: 20px;}
+.contents .inner .bottom .txt h3 i {margin-right: 8px;}
+.contents .inner .bottom .txt p {font-size: 20px; float: left; margin-right: 23px;}
+.contents .inner .bottom .txt p span {font-family: 'Lato' , sans-serif; font-size: 20px; background: #0A244F; padding: 4px 9px; color: #FFF; margin-right: 10px; display: inline-block;}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {width: 100%; height: 420px; background: #020B30; color: #fff; overflow: hidden;}
+footer .inner {width: 1400px; height: 100%; margin: 90px auto 0; display: flex; box-sizing: border-box;}
+footer .inner .left {display: flex; width: 70%; margin-left: 80px;}
+footer .inner .left p.logo {margin-right: 120px; width: 240px; height: 108px;}
+footer .inner .left p.logo img {width: 100%; height: 100%;}
+footer .inner .left .text {padding-top: 20px;}
+footer .inner .left .text span {color: #DEDEDE;}
+footer .inner .left .text p {margin-top: 20px; margin-bottom: 30px; line-height: 1.8; color: #DEDEDE;}
+footer .inner .left .text .copy {color: #aaa;}
+
+footer .inner .right {width: 30%; padding-top: 30px;}
+footer .inner .right .bol {font-weight: bold; margin-bottom: 20px;}
+footer .inner .right .bol .en {color: #D3D9E3;}
+footer .inner .right ul {display: flex; color: #DEDEDE;}
+footer .inner .right ul li {margin-right: 30px;}
+footer .inner .right ul li p {margin-bottom: 9px;}
+footer .inner .right ul li:last-child p {margin-bottom: 8px;}
+
+
+
+/* top */
+.goTop {position: fixed; font-size: 47px; bottom: 8%; right: 5%; color: #3c4774; display: none; z-index: 1000;}

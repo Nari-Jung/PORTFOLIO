@@ -1,0 +1,539 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Luckiest+Guy&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Oi&display=swap');
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+html {font-size: 16px;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+.en {font-family: 'Luckiest Guy', cursive;}
+.en2 {font-family: 'Acme', sans-serif;}
+.logo, .fLogo {font-family: 'Oi', cursive;}
+.titleBox .title.en {font-size: 3.75rem; letter-spacing: 0.125rem; margin-bottom: 1rem;}
+.titleBox p {color: #787878;}
+section .inner {width: 87.5rem;}
+section .inner .btn {display: block; width: 7.5rem; position: relative; margin-top: 2.5rem;}
+section .inner .btn img {width: 100%;}
+section .inner .btn span {display: block; width: 100%; text-align: center; color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.3s;}
+section .inner .btn:hover span {color: #000; transition: all 0.3s;}
+
+.wrap {width: 100%; overflow: hidden;}
+
+/* header */
+header {width: 100%; position: fixed; z-index: 100000;}
+header .innerHeader {width: 100rem; height: 5rem; line-height: 5rem; margin: auto; }
+header .innerHeader .menu {width: 100%; display: flex; justify-content: space-between; color: #fff; position: relative; font-size: 2.188rem;}
+header .innerHeader .menu .mail2 {display: none; transform: translateY(-0.313rem);}
+header .innerHeader .menu .logo {font-size: 2.063rem; -webkit-text-stroke: 0.063rem; -webkit-text-fill-color: transparent; transition: all 0.3s;}
+header .innerHeader .menu .open {border: none; background: none; color: #fff; cursor: pointer; font-size: 2.188rem;}
+
+header .innerHeader .menu .mailBox:hover .mail {display: none;}
+header .innerHeader .menu .mailBox:hover .mail2 {display: block;}
+
+header.on {background: #ff687d; transition: opacity 0.3s ease;}
+
+/* menu */
+.menuOpen .menuWrap {width: 0; overflow: hidden; opacity: 0; background: url(../img/menu_bg.png) no-repeat top/cover; position: fixed; z-index: 10000; top: 0; transition: opacity 0.3s ease;}
+.menuOpen .menuWrap ul {display: none;}
+.menuOpen .menuWrap .inner {width: 100rem; margin: auto;}
+.menuOpen .menuWrap .icon {display: flex; color: #000; justify-content: space-between; height: 5rem; line-height: 5rem;}
+.menuOpen .menuWrap .icon .mail i {font-size: 2.188rem;}
+.menuOpen .menuWrap .icon .mail2 {display: none; transform: translateY(-5px);}
+.menuOpen .menuWrap .icon .close i {font-size: 2.5rem;}
+
+/* hover */
+.menuOpen .menuWrap .icon .mailBox:hover .mail {display: none;}
+.menuOpen .menuWrap .icon .mailBox:hover .mail2 {display: block;}
+
+.menuOpen .menuWrap .tit {text-align: center; margin-top: 1.875rem;}
+.menuOpen .menuWrap .tit li a {margin-bottom: 3.75rem; font-size: 5.625rem; color: #fe526a; letter-spacing: 0.313rem; display: inline-block; transition: all 0.3s;}
+.menuOpen .menuWrap .tit li a:hover {transform:scale(1.1); color: #fe526a; -webkit-text-stroke: 0.125rem; -webkit-text-fill-color: transparent; transition: all 0.3s;}
+
+.menuOpen .menuWrap .sub {text-align: center; color: #A3A3A3; font-size: 1.875rem; display: flex; justify-content: center; gap: 9.375rem; padding: 1.875rem; transition: all 0.3s;}
+.menuOpen .menuWrap .sub a {transition: all 0.3s;}
+.menuOpen .menuWrap .sub a:hover {color: rgb(65, 65, 65); transition: all 0.3s;}
+
+.menuOpen .roundBox .pi {position: absolute; top: 50%; left: 7%; width: 11%;}
+.menuOpen .roundBox .pi img {width: 100%;}
+.menuOpen .roundBox .pur {position: absolute; bottom: 11%; right: 7%; width: 6%;}
+.menuOpen .roundBox .pur img {width: 100%;}
+.menuOpen .roundBox .yell {position: absolute; top: 25%; right: 40%; width: 4%; z-index: -1;}
+.menuOpen .roundBox .yell img {width: 100%;}
+
+/* menu.on */
+.menuOpen .menuWrap.on2 {width: 100%; height: 100%; left: 0; opacity: 1; z-index: 10000; box-sizing: border-box; transition: opacity 0.3s ease;}
+.menuOpen .menuWrap.on2 ul {display: block;}
+
+/* visual */
+.visual {background: url(../img/home_bg.png) no-repeat center/cover; height: 100vh; position: relative; overflow: hidden; background-color: #fdf6f1;}
+.visual .mainTitle {position: absolute; top: 31%; left: 50%; transform: translateX(-50%); width: 100%; z-index: 100;}
+.visual .mainTitle h2 {font-size: 7.5rem; text-align: center; color: #fff; letter-spacing: 0.313rem;}
+
+.visual .roundBox .bl {position: absolute; left: -4%; top: 38%; width: 15%;}
+.visual .roundBox .bl img {width: 100%;}
+.visual .roundBox .yell {position: absolute; top: 66%; left: 33%; width: 10%;}
+.visual .roundBox .yell img {width: 100%;}
+.visual .roundBox .pur {position: absolute; top: 25%; right: 34%; width: 7%;}
+.visual .roundBox .pur img {width: 100%;}
+.visual .roundBox .pi {position: absolute; top: 10%; right: -11%; width: 18%;}
+.visual .roundBox .pi img {width: 100%;}
+.visual .roundBox .oran {position: absolute; top: 76%; right: 16%; width: 5%;}
+.visual .roundBox .oran img {width: 100%;}
+
+/* about */
+.about {background: url(../img/home_about_bg.png) no-repeat bottom/cover; width: 100%; top: 80%; overflow: hidden; padding: 18.75rem 0 12.5rem;}
+.about .inner {width: 75rem; display: flex; margin: auto; justify-content: center;}
+.about .inner .imgBox {width: 50%;}
+.about .inner .imgBox .img {width: 70%; margin: auto; position: relative; z-index: 100;}
+.about .inner .imgBox .img img {width: 100%;}
+.about .inner .imgBox .img::before {content: ''; position: absolute; top: -3.125rem; left: -20rem; background: url(../img/home_aboutimg_back.png) no-repeat 100% 100%/60%; width: 100%; height: 100%; z-index: -1;}
+
+.about .inner .textBox {width: 50%;}
+.about .inner .textBox .slogan {font-size: 2.188rem; margin-bottom: 1.875rem;}
+.about .inner .textBox .desc p {margin-bottom: 0.938rem; color: #505050;}
+
+.animated-title {position: relative; width: 100%; height: 9.75rem; line-height: 9.75rem; overflow: hidden; margin-top: 9.375rem;}
+.animated-title .track {position: absolute; white-space: nowrap; will-change: transform; animation: marquee 60s linear infinite; top: 0px;}
+.animated-title .track .content {font-size: 8.125rem; color: #fe526a; -webkit-text-stroke: 0.125rem; -webkit-text-fill-color: transparent;}
+@keyframes marquee {
+  from { transform: translateX(0);}
+  to { transform: translateX(-50%);}
+}
+
+/* skills */
+.skills {width: 100%; height: 56.25rem; position: relative;}
+.skills .inner {margin: 11.25rem auto 10.625rem; text-align: center;}
+.skills .inner .skillBox {display: flex; justify-content: space-between; width: 50rem; flex-wrap: wrap; margin: 4.375rem auto 0; gap: 4rem 4.375rem;}
+.skills .inner .skillBox li p {width: 9.375rem;}
+.skills .inner .skillBox li p img {width: 100%;}
+
+.skills .inner .skillBox .progressbar {display: inline-block; width: 5.625rem; height: 0.938rem; background-color: #d6d3d3; border-radius: 1.25rem; text-align: left; position: relative;}
+.skills .inner .skillBox li .progressbar.motion::after {content: ''; width: 70%; height: 0.938rem; background-color: #fe526a; border-radius: 1.25rem; position: absolute; left: 0; top: 0; animation-name: bar; animation-duration: 0.7s;}
+.skills .inner .skillBox .css .progressbar.motion::after {width: 65%; animation-name: bar;}
+.skills .inner .skillBox .js .progressbar.motion::after {width: 50%; animation-name: bar;}
+.skills .inner .skillBox .ps .progressbar.motion::after {width: 70%; animation-name: bar;}
+.skills .inner .skillBox .ai .progressbar.motion::after {width: 80%; animation-name: bar;}
+.skills .inner .skillBox .xd .progressbar.motion::after {width: 70%; animation-name: bar;}
+
+@keyframes bar {
+  0%{width: 0%;}
+}
+
+.skills .bg {position: relative; top: -17.5rem; width: 100%; z-index: -1;}
+.skills .bg .bg1 {opacity: 50%; width: 100%;}
+.skills .bg .bg1 img {width: 100%;}
+.skills .bg .bg2 {position: absolute; top: 0; opacity: 40%;}
+.skills .bg .bg2 img {width: 100%;}
+
+.skills .roundBox .pi {position: absolute; top: -17.5rem; left: -4.375rem; width: 15%;}
+.skills .roundBox .pi img {width: 100%;}
+.skills .roundBox .bl {position: absolute; top: -17.5rem; right: 6.25rem; width: 6%;}
+.skills .roundBox .bl img {width: 100%;}
+.skills .roundBox .yell {position: absolute; top: 55rem; right: 18.75rem; width: 8%; z-index: 10000;}
+.skills .roundBox .yell img {width: 100%;}
+
+/* coding */
+.coding {width: 100%; overflow: hidden; background: url(../img/home_coding_bg.png) no-repeat top/cover; padding: 15.625rem 0 13.75rem 18.75rem;  position: relative;}
+.coding .inner {width: 100%; display: flex; gap: 5rem;}
+.coding .inner .titleBox {margin-top: 0.938rem; width: 25%;}
+
+.coding .inner .swiper-container {width: 100%; overflow: hidden;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide {background-color: #b4dce2; border-radius: 1.25rem; transition: all 0.3s;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide .img {overflow: hidden; width: 100%;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide .img img {width:100%; transition: all 0.3s;}
+
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide:hover {background-color: #90d1db; transition: all 0.3s;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide a .img:hover img {transform: scale(1.1); transition: all 0.5s;}
+
+.swiper-button-prev, .swiper-button-next {top: 22% !important; left: 107.5rem !important;}
+.swiper-button-next {left: 111.25rem !important;}
+.swiper-button-next:after, .swiper-button-prev:after {font-size: 1.25rem !important; font-weight: bold; color: #fe526a; background: #ffa9b5a2; border-radius: 0.625rem; padding: 0.625rem 0.938rem;}
+
+/* ncs */
+.ncs {width: 100%; background: url(../img/home_ncs_bg.png) no-repeat top/cover; background-color: #f2ebe5; position: relative; padding: 15.625rem 0 15.625rem;}
+.ncs .inner {width: 100%; text-align: center; margin: auto; justify-content: space-between; flex-direction: row-reverse; gap: 5rem;}
+.ncs .inner .titleBox {margin-bottom: 4.375rem;}
+
+.ncs > .inner > .swiper2 > .swiper-wrapper > .swiper-slide .img {width: 100%; border-radius: 1.25rem; overflow: hidden;}
+.ncs > .inner > .swiper2 > .swiper-wrapper > .swiper-slide .img img {width: 100%;}
+
+.ncs .roundBox .pur {position: absolute; top: -3.125rem; left: 31.25rem; width: 5%;}
+.ncs .roundBox .pur img {width: 100%;}
+
+/* log */
+.log {width: 100%; background: url(../img/home_log_bg.png) no-repeat top/cover; background-color: #fdf6f1; position: relative; padding: 15.625rem 0 15.625rem;}
+.log .inner {margin: auto; text-align: center;}
+.log .inner .titleBox {margin-bottom: 4.375rem;}
+.log .inner .titleBox p {color: rgb(236, 236, 236);}
+
+.log .inner .video {width: 56.25rem; margin: auto;}
+.log .inner .video video {border-radius: 1.25rem; width: 100%;}
+
+.log .roundBox .bl {position: absolute; top: 0px; right: -1.875rem; width: 11%; z-index: 10000;}
+.log .roundBox .bl img {width: 100%;}
+
+/* graphic */
+.graphic {width: 100%; background: url(../img/home_graphic_bg.png) no-repeat top/cover; background-color: #ff687d; position: relative; padding: 15.625rem 0 15.625rem;}
+.graphic .inner {margin: auto; display: flex; justify-content: center; gap: 9.375rem;}
+.graphic .inner .titleBox {margin-top: 4.375rem;}
+
+.graphic .inner .graphicBox {position: relative;}
+.graphic .inner .graphicBox .img {width: 26.875rem; position: relative; z-index: 10000; border-radius: 1.25rem; overflow: hidden;}
+.graphic .inner .graphicBox .img a::before {position: absolute; top: 0; content: ''; width: 100%; height: 100%; background: #000; opacity: 0%; transition: all 0.3s;}
+.graphic .inner .graphicBox .img a:hover::before {opacity: 40%; transition: all 0.5s;}
+.graphic .inner .graphicBox .img a {width: 100%; display: block;}
+.graphic .inner .graphicBox .img a img {width: 100%;}
+.graphic .inner .graphicBox .backImg {position: absolute; top: -5rem; left: 7.5rem;}
+
+.graphic .roundBox .yell {position: absolute; bottom: 20.625rem; right: 1.25rem; width: 11%;}
+.graphic .roundBox .yell img {width: 100%;}
+.graphic .roundBox .pi {position: absolute; bottom: -3.125rem; left: 8.125rem; width: 11%; z-index: 10000;}
+.graphic .roundBox .pi img {width: 100%;}
+.graphic .roundBox .wh {position: absolute; top: -0.938rem; left: 48.75rem; width: 6%; z-index: 10000;}
+.graphic .roundBox .wh img {width: 100%;}
+
+/* footer */
+footer {width: 100%; background: url(../img/home_footer.png) no-repeat top/cover; position: relative; background-color: #fdf6f1; padding: 18.75rem 0 4.375rem;}
+footer .inner {margin: auto; text-align: center;}
+footer .inner .fLogo {font-size: 3.75rem; color: #fff; -webkit-text-stroke: 0.006rem; -webkit-text-fill-color: transparent; margin-bottom: 0.625rem;}
+footer .inner .desc {color: #fff; font-weight: 200;}
+footer .inner .mailBox {background: #fdf6f1; width: 53.125rem; height: 9.375rem; margin: 3.75rem auto 0; border-radius: 1.25rem; line-height: 9.375rem; transition: all 0.3s;}
+footer .inner .mailBox:hover {background: #000; transform: scale(1.06); transition: all 0.3s;}
+footer .inner .mailBox .mail {color: #ff687d; font-size: 4.375rem;}
+footer .inner .copy {font-size: 0.938rem; color: #a0a0a0; margin-top: 5.625rem;}
+
+footer .air .air1 {position: absolute; top: 12.5rem; left: 10rem; width: 12%; transform: rotate(10deg);}
+footer .air .air1 img {width: 100%;}
+footer .air .air2 {position: absolute; top: 11.25rem; right: 15.625rem; width: 5%; transform: rotate(-30deg);}
+footer .air .air2 img {width: 100%;}
+footer .air .air3 {position: absolute; top: 21.875rem; right: 15.625rem; width: 7%; transform: rotate(-10deg);}
+footer .air .air3 img {width: 100%;}
+
+.goTop {position: fixed; right: 6.25rem; bottom: 5rem; font-size: 3.125rem; color: #ff687d; z-index: 100000;}
+.goTop::after {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; width: 80%; height: 50%; z-index: -1; border-radius: 50%;}
+
+/* slide animation */
+.motionUp {
+  animation: up 0.1s both;
+  animation-delay: 0s;
+}
+
+.motionLeft {
+  animation: left 0.1s both;
+  animation-delay: 0s;
+}
+
+.motionRight {
+  animation: right 0.1s both;
+  animation-delay: 0s;
+}
+
+@keyframes up {
+  0% {transform: translateY(200px); opacity: 0;}
+  30% {transform: translateY(200px); opacity: 0;}
+}
+
+@keyframes left {
+  0% {transform: translateX(-200px); opacity: 0;}
+  30% {transform: translateX(-200px); opacity: 0;}
+}
+
+@keyframes right {
+  0% {transform: translateX(200px); opacity: 0;}
+  30% {transform: translateX(200px); opacity: 0;}
+}
+
+/* splitting animation */
+.motion .char {
+  animation: jumping 0.4s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(50ms * var(--char-index));
+}
+
+.motion4 {
+  animation: air 0.5s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.motion5 {
+  animation: air2 0.5s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.motion6 {
+  animation: air2 0.5s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+
+@keyframes jumping {
+  0% {top: 0;}
+  50% {top: -15px;}
+  100% {top: 0;}
+}
+
+@keyframes air {
+  0% {transform: translate(-100px, 150px); opacity: 0;}
+  30% {transform: translate(-50px, 70px); opacity: 0;}
+}
+
+@keyframes air2 {
+  0% {transform: translate(100px, 150px); opacity: 0;}
+  30% {transform: translate(50px, 70px); opacity: 0;}
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 1670px) {
+.menuOpen .menuWrap .inner {width: 95%;}
+
+header .innerHeader {width: 95%;}
+.skills .bg {top: -14.5rem;}
+.coding {padding: 13.75rem 0px 13.75rem 13.75rem;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide a .img {margin-top: 1.25rem;}
+section .inner {width: 95%;}
+}
+
+@media screen and (max-width: 1400px) {
+html {font-size: 15px;}
+.skills .bg {top: -10.5rem;}
+.coding {padding: 13.75rem 0 13.75rem 13.75rem;}
+.coding .inner .swiper-container .swiper-wrapper .swiper-slide a .img {margin-top: unset;}
+}
+
+@media screen and (max-width: 1280px) {
+/* .about .inner {width: 75.25rem;} */
+.animated-title .track .content {font-size: 7.8rem;}
+.skills .bg {top: -7.5rem;}
+}
+
+@media screen and (max-width: 1200px) {
+.titleBox .title.en {font-size: 3.125rem;}
+section .inner .btn {display: block; width: 7.5rem; position: relative; margin-top: 2rem;}
+header .innerHeader {width: 93%;}
+
+.about {padding: 12.5rem 0 7.5rem;}
+.about .inner {width: 70rem;}
+.about .inner .imgBox .img::before {left: -16rem;}
+.animated-title {margin-top: 6.375rem;}
+.about .inner .textBox .slogan {font-size: 2rem; margin-bottom: 1rem;}
+
+.skills {height: 53.25rem;}
+.skills .inner {margin: 8.125rem auto 8.125rem;}
+.skills .bg {top: -9.5rem;}
+
+.coding {padding: 13.75rem 0 13.75rem 6.25rem;}
+.coding .inner .titleBox {margin-top: 2.938rem;}
+.coding .swiper-button-prev, .swiper-button-next {top: 21% !important;}
+.coding .swiper-button-prev {left: 69.5rem !important;}
+.coding .swiper-button-next {left: 73.25rem !important;}
+
+.ncs {padding: 10.125rem 0 12.125rem;}
+.ncs .inner {width: 90%;}
+
+.log {padding: 10.125rem 0 12.125rem;}
+
+.graphic {padding: 12.125rem 0 9.125rem;}
+.graphic .inner {gap: 6.375rem;}
+.graphic .inner .graphicBox .backImg {top: -4rem;}
+
+.goTop {right: 3.25rem;}
+}
+
+@media screen and (max-width: 1024px) {
+.visual .mainTitle {top: 34%;}
+.about .inner {display: unset;}
+.about .inner .imgBox {width: 60%; margin: auto; }
+.about .inner .imgBox .img {border-radius: 20px; width: 80%;}
+.about .inner .imgBox .img::before {left: -22rem;}
+.about .inner .imgBox .img img {border-radius: 15px;}
+
+.about .inner .textBox {width: 51%;}
+.about .inner .textBox .slogan {text-align: center; margin-top: 30px;}
+.about .inner .textBox .desc {text-align: center;}
+.about .inner .textBox {margin: auto;}
+.about .inner .textBox .btn {margin: 30px auto 0;}
+
+.animated-title {margin-top: 4.375rem;}
+
+.skills {height: 50.25rem;}
+
+.coding .swiper-button-prev {left: 56.5rem !important;}
+.coding .swiper-button-next {left: 60.25rem !important;}
+
+.log .inner .video {width: 95%;}
+
+.graphic .inner {width: 85%; gap: 4.375rem;}
+.graphic .inner .graphicBox .backImg {left: 5.5rem;}
+
+footer .air .air2 {right: 13.625rem;}
+footer .air .air3 {right: 10.625rem;}
+}
+
+@media screen and (max-width:800px) {
+.titleBox .title.en {font-size: 2.813rem;}
+
+.visual .mainTitle {top: 30%;}
+
+.about {padding: 8.5rem 0 7.5rem;}
+.about .inner .imgBox .img::before {display: none;}
+.about .inner .imgBox {width: 100%;}
+.about .inner .textBox {width: 88%;}
+.animated-title .track .content {font-size: 6.8rem;}
+
+.skills {height: 48.25rem;}
+.skills .bg {top: -7.5rem;}
+.skills .inner .skillBox {width: 47rem;}
+
+.coding {padding: 13.75rem 0 13.75rem 2.25rem;}
+.coding .inner {gap: 8rem;}
+.coding .inner .titleBox {margin-top: 0.938rem;}
+.coding .swiper-button-prev, .swiper-button-next {top: 23% !important;}
+.coding .swiper-button-prev {left: 43.5rem !important;}
+.coding .swiper-button-next {left: 47.25rem !important;}
+
+.graphic .inner {width: 91%;}
+.graphic .inner .graphicBox .img {width: 21.875rem;}
+.graphic .inner .graphicBox .backImg {display: none;}
+
+footer {padding: 15.75rem 0 4.375rem}
+footer .inner .mailBox {width: 45.125rem;}
+footer .inner .mailBox .mail {font-size: 3.785rem;}
+
+footer .air .air1 {left: 5rem; width: 15%;}
+footer .air .air2 {right: 9.625rem; width: 7%;}
+footer .air .air3 {right: 5.625rem; top: 20.875rem; width: 9%;}
+  }
+
+@media screen and (max-width:700px) {
+html {font-size: 14px;}
+
+.roundBox {display: none;}
+.roundBox.mainRound {display: block;}
+
+.about {padding: 7.5rem 0 6.5rem;}
+
+.skills {height: 47.25rem;}
+.skills .inner {margin: 5.125rem auto 6.125rem;}
+.skills .bg {top: -5.5rem;}
+
+.coding {padding: 12.75rem 0 10.75rem 2.25rem;}
+.coding .swiper-button-prev {left: 40.5rem !important;}
+.coding .swiper-button-next {left: 44.25rem !important;}
+
+.ncs {padding: 9.125rem 0 10.125rem;}
+
+.log {padding: 9.125rem 0 10.125rem;}
+
+.graphic {padding:10.125rem 0 6.125rem;}
+}
+
+@media screen and (max-width:600px) {
+.titleBox .title.en {font-size: 2.5rem;}
+
+.visual .mainTitle h2 {font-size: 6.5rem;}
+
+.about .inner .textBox .slogan {font-size: 1.75rem;}
+
+.skills {height: 41.25rem;}
+.skills .inner .skillBox {width: 39rem; margin: 2.375rem auto 0;}
+.skills .inner .skillBox li p {width: 8.375rem;}
+
+.coding .inner {gap: 5rem;}
+.coding .inner .titleBox {width: 30%;}
+.coding .swiper-button-prev {left: 32.5rem !important;}
+.coding .swiper-button-next {left: 36.25rem !important;}
+
+.graphic .inner {gap: 3.375rem;}
+.graphic .inner .titleBox {margin-top: 1.375rem;}
+.graphic .inner .graphicBox .img {width: 18.875rem;}
+
+footer .inner .mailBox {width: 37.125rem;}
+footer .inner .mailBox .mail {font-size: 3rem;}
+}
+
+@media screen and (max-width:500px) {
+.menuOpen .menuWrap .inner {width: 90%;}
+.menuOpen .menuWrap .tit li a {font-size: 3.625rem; margin-bottom: 0.75rem;}
+
+.titleBox .title.en {font-size: 2.313rem;}
+
+.visual .mainTitle h2 {font-size: 5.5rem;}
+
+.animated-title .track .content {font-size: 5.8rem;}
+
+.skills {height: 37.25rem;}
+.skills .inner {margin: 4.125rem auto 6.125rem;}
+.skills .inner .skillBox {width: 32rem;}
+.skills .inner .skillBox li p {width: 7.375rem;}
+
+.coding {padding: 9.75rem 0 9.75rem 2.25rem;}
+.coding .inner {flex-wrap: wrap; gap: 4.375rem;}
+.coding .inner .titleBox {width: 100%;}
+.coding .swiper-button-prev, .swiper-button-next {top: 47% !important;}
+.coding .swiper-button-prev {left: 27.5rem !important;}
+.coding .swiper-button-next {left: 31.25rem !important;}
+
+.graphic .inner {flex-wrap: wrap; gap: 4.375rem;}
+.graphic .inner .titleBox {text-align: center;}
+.graphic .inner .btn {margin: 1rem auto 0;}
+.graphic .inner .graphicBox .img {width: 24.875rem;}
+
+footer {padding: 13.75rem 0 4.375rem;}
+footer .inner .mailBox {width: 32.125rem;}
+footer .inner .mailBox .mail {font-size: 2.75rem;}
+footer .inner .copy {margin-top: 3.635rem;}
+footer .air .air1 {left: 2rem; top: 12.5rem;}
+footer .air .air2 {right: 5.625rem; top: 10.25rem;}
+footer .air .air3 {right: 1.625rem; top: 17.875rem;}
+
+.goTop {right: 1.25rem; bottom: 2rem;}
+}
+
+@media screen and (max-width:400px) {
+html {font-size: 13px;}
+.titleBox .title.en {font-size: 2.063rem;}
+section .inner .btn {margin-top: 1rem; width: 6.5rem; font-size: 12px;}
+
+.visual .mainTitle {top: 32%;}
+.visual .mainTitle h2 {font-size: 4.5rem;}
+
+.about {padding: 5.5rem 0 3.5rem;}
+.about .inner .textBox .slogan {font-size: 1.45rem;}
+.animated-title {margin-top: 3.375rem;}
+.animated-title .track .content {font-size: 5rem;}
+
+.skills {height: 33.25rem;}
+.skills .bg {top: -3.5rem;}
+.skills .inner .skillBox {width: 27rem; gap: 2rem 2.375rem;}
+.skills .inner .skillBox li p {width: 6.375rem;}
+.skills .inner .skillBox .progressbar {width: 3.625rem;}
+
+.coding {padding: 8.75rem 0 8.75rem 1.563rem;}
+.coding .inner {gap: 3.375rem;}
+.coding .swiper-button-prev, .swiper-button-next {top: 49% !important;}
+.coding .swiper-button-prev {left: 21.5rem !important;}
+.coding .swiper-button-next {left: 25.25rem !important;}
+
+.ncs {padding: 7.125rem 0 8.125rem;}
+.ncs .inner .titleBox {margin-bottom: 3.375rem;}
+
+.log {padding: 7.125rem 0 8.125rem;}
+
+.graphic {padding: 7.125rem 0 6.125rem;}
+.graphic .inner {gap: 4.375rem;}
+
+footer {padding: 10.75rem 0 4.375rem;}
+footer .inner .fLogo {font-size: 2.75rem;}
+footer .inner .mailBox {height: 7.375rem; line-height: 7.375rem; margin: 2.75rem auto 0; width: 27.125rem;}
+footer .inner .mailBox .mail {font-size: 2.3rem;}
+footer .air .air1 {top: 10.5rem;}
+footer .air .air2 {top: 9.25rem;}
+footer .air .air3 {top: 12.875rem;}
+}

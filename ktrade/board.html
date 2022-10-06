@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css/board_style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo">
+                    <a href="index.html"><img src="img/logo_w.png" alt="로고"></a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="CEO_Message.html">회사소개</a>
+                                <ul class="subMenu">
+                                    <li><a href="CEO_Message.html">인사말</a></li>
+                                    <li><a href="way_to_come.html">오시는 길</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="SawBlade.html" target="blank">톱날 <span class="en">(Saw Blade)</span></a>
+                                <ul class="subMenu">
+                                    <li><a href="SawBlade.html">초경원형톱날</a></li>
+                                    <li><a href="SawBlade.html">하이스원형톱날</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="Cuttingmachine.html" target="blank">톱기계 <span class="en">(Cutting
+                                    machine)</span></a>
+                                        <ul class="subMenu">
+                                            <li><a href="Cuttingmachine.html">원형톱기계</a></li>
+                                            <li><a href="Cuttingmachine.html">절단기</a></li>
+                                            <li><a href="Cuttingmachine.html">밴드톱기계</a></li>
+                                        </ul>
+                        </li>
+                        <li>
+                            <a href="notices.html" target="blank">고객지원</a>
+                                <ul class="subMenu">
+                                    <li><a href="notices.html">공지사항</a></li>
+                                    <li><a href="board.html">게시판</a></li>
+                                    <li><a href="Qlist.html">문의사항</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="visual">
+            <h2>게시판</h2>
+        </section>
+        <section class="category">
+            <div class="inner">
+                <p class="home"><a href="index.html"><img src="img/home_icon_2.png" alt=""></a></p>
+                <ul>
+                    <li>고객지원</li>
+                    <li class="submenu"><a href="#">게시판<span><i class="fa-solid fa-caret-down"></i></span></a>
+                    <ul class="menu">
+                        <li><a href="notices.html">공지사항</a></li>
+                        <li><a href="Qlist.html">문의사항</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contents">
+            <div class="inner">
+                <div class="form">
+                    <form>
+                        <select name="sel" id="">
+                            <option value="a">전체</option>
+                            <option value="b">제목</option>
+                            <option value="c">내용</option>
+                            <option value="d">작성자</option>
+                        </select>
+                        <input type="text"/>
+                        <button class="btn">검색하기</button>
+                    </form>
+                </div>
+                <!-- <section class="search">
+                    <a href="#" class="select">전체 <span class="lnr lnr-chevron-down"></span></a>
+                    <div class="searchBar"></div>
+                    <a href="#" class="btn">검색하기</a>
+                </section> -->
+                <section class="list">
+                    <table>
+                        <colgroup>
+                            <col width="7%">
+                            <col>
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                        </colgroup>
+                        <thead>
+                            <th scope="col">번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성일</th>
+                            <th scope="col">조회</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">5</td>
+                                <td class="subject">
+                                    <a href="#">원형톱날의 알고리즘</a>
+                                </td>
+                                <td class="name">케이교역</td>
+                                <td class="date">05-08</td>
+                                <td class="hit">2324</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">4</td>
+                                <td class="subject">
+                                    <a href="#">Cold saw 적용예시(절단소재크기/rpm/feedrate)</a>
+                                </td>
+                                <td class="name">케이교역</td>
+                                <td class="date">05-08</td>
+                                <td class="hit">2324</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">3</td>
+                                <td class="subject">
+                                    <a href="#">밴드쏘 의 치형/피치 선정예</a>
+                                </td>
+                                <td class="name">케이교역</td>
+                                <td class="date">08-28</td>
+                                <td class="hit">2321</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">2</td>
+                                <td class="subject">
+                                    <a href="#">하이스 톱날의 날수(피치) 선정</a>
+                                </td>
+                                <td class="name">케이교역</td>
+                                <td class="date">07-05</td>
+                                <td class="hit">2423</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">1</td>
+                                <td class="subject">
+                                    <a href="#">톱날의 날수(피치)를 선정하는 기준</a>
+                                </td>
+                                <td class="name">케이교역</td>
+                                <td class="date">06-03</td>
+                                <td class="hit">2008</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <div class="butt">
+                <a href="#" class="btnT">1</a>
+                <a href="#" class="btnT"><span class="lnr lnr-chevron-right"></span></a>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="left">
+                    <p class="logo">
+                        <img src="img/logo_w.png" alt="로고">
+                    </p>
+                    <div class="text">
+                        <span>개인정보처리방침</span>
+                        <p>(주)케이교역 | 대표 : 이충관 | 사업자등록번호 : 119-20-98223<br>
+                            서울특별시 금천구 범안로 1142 하우스디 스카이밸리 2차 924<br>
+                            휴대폰 : 010-8872-5126</p>
+                        <span class="copy">COPYRIGHT ⓒ Kayco. ALL RIGHT RESERVED</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="bol">상담안내 <span class="en">customer service</span></p>
+                    <ul>
+                        <li>
+                            <p>영업문의</p>
+                            <p><span class="en">A/S 문의</span></p>
+                            <p class="en">FAX</p>
+                            <p class="en">E-mail</p>
+                        </li>
+                        <li>
+                            <p>070 - 4227 - 5126~7</p>
+                            <p>070 - 4760 - 0066</p>
+                            <p>02 - 6280 - 2609</p>
+                            <p class="en">ckay@kayak.kr</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="goTop"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Luckiest+Guy&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Oi&display=swap');
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 17px;}
+.en {font-family: 'Luckiest Guy', cursive;}
+.en2 {font-family: 'Acme', sans-serif;}
+.logo, .fLogo {font-family: 'Oi', cursive;}
+.titleBox .title.en {font-size: 60px; letter-spacing: 2px; margin-bottom: 15px;}
+.titleBox p {color: #787878;}
+section .inner {width: 1200px;}
+
+.wrap {width: 100%; overflow: hidden; background-color: #F9F6F3;}
+
+/* header */
+header {width: 100%; position: fixed; z-index: 100000; }
+header .innerHeader {width: 1600px; height: 80px; line-height: 80px; margin: 0 auto; }
+header .innerHeader .menu {width: 100%; display: flex; justify-content: space-between; color: #fff; position: relative; font-size: 35px;}
+header .innerHeader .mail.chan {display: none;}
+header .innerHeader .menu .logo {font-size: 33px; -webkit-text-stroke: 1px; -webkit-text-fill-color: transparent; display: none;}
+header .innerHeader .menu .open {border: none; background: none; color: #fff; cursor: pointer; font-size: 35px;}
+
+header.on {background: #ff687d; transition: opacity 0.3s ease;}
+
+header.colorChange .innerHeader .menu i {color: #000;}
+
+/* header */
+header {width: 100%; position: fixed; z-index: 100000; }
+header .innerHeader {width: 1600px; height: 80px; line-height: 80px; margin: 0 auto; }
+header .innerHeader .menu {width: 100%; display: flex; justify-content: space-between; color: #fff; position: relative; font-size: 35px;}
+header .innerHeader .menu .mail2 {display: none; transform: translateY(-5px);}
+header .innerHeader .menu .logo {display: none;}
+header .innerHeader .menu .open {border: none; background: none; color: #fff; cursor: pointer; font-size: 35px;}
+
+header .innerHeader .menu .mailBox:hover .mail {display: none;}
+header .innerHeader .menu .mailBox:hover .mail2 {display: block;}
+
+header.on {background: #ff687d; transition: opacity 0.3s ease;}
+
+/* menu */
+.menuOpen .menuWrap {width: 0; overflow: hidden; opacity: 0; background: url(../img/menu_bg.png) no-repeat top/cover; position: fixed; z-index: 10000; top: 0; transition: opacity 0.3s ease;}
+.menuOpen .menuWrap ul {display: none;}
+.menuOpen .menuWrap .inner {width: 100rem; margin: auto;}
+.menuOpen .menuWrap .icon {display: flex; color: #000; justify-content: space-between; height: 5rem; line-height: 5rem;}
+.menuOpen .menuWrap .icon .mail i {font-size: 2.188rem;}
+.menuOpen .menuWrap .icon .mail2 {display: none; transform: translateY(-5px);}
+.menuOpen .menuWrap .icon .close i {font-size: 2.5rem;}
+
+/* hover */
+.menuOpen .menuWrap .icon .mailBox:hover .mail {display: none;}
+.menuOpen .menuWrap .icon .mailBox:hover .mail2 {display: block;}
+
+.menuOpen .menuWrap .tit {text-align: center; margin-top: 1.875rem;}
+.menuOpen .menuWrap .tit li a {margin-bottom: 3.75rem; font-size: 5.625rem; color: #fe526a; letter-spacing: 0.313rem; display: inline-block; transition: all 0.3s;}
+.menuOpen .menuWrap .tit li a:hover {transform:scale(1.1); color: #fe526a; -webkit-text-stroke: 0.125rem; -webkit-text-fill-color: transparent; transition: all 0.3s;}
+
+.menuOpen .menuWrap .sub {text-align: center; color: #A3A3A3; font-size: 1.875rem; display: flex; justify-content: center; gap: 9.375rem; padding: 1.875rem; transition: all 0.3s;}
+.menuOpen .menuWrap .sub a {transition: all 0.3s;}
+.menuOpen .menuWrap .sub a:hover {color: rgb(65, 65, 65); transition: all 0.3s;}
+
+.menuOpen .roundBox .pi {position: absolute; top: 50%; left: 7%; width: 11%;}
+.menuOpen .roundBox .pi img {width: 100%;}
+.menuOpen .roundBox .pur {position: absolute; bottom: 11%; right: 7%; width: 6%;}
+.menuOpen .roundBox .pur img {width: 100%;}
+.menuOpen .roundBox .yell {position: absolute; top: 25%; right: 40%; width: 4%; z-index: -1;}
+.menuOpen .roundBox .yell img {width: 100%;}
+
+/* menu.on */
+.menuOpen .menuWrap.on2 {width: 100%; height: 100%; left: 0; opacity: 1; z-index: 10000; box-sizing: border-box; transition: opacity 0.3s ease;}
+.menuOpen .menuWrap.on2 ul {display: block;}
+
+/* visual */
+.visual {background: url(../img/sub_main_dop.png) no-repeat no-repeat top/cover; height: 800px; position: relative; overflow: hidden;}
+.visual::before {position: absolute; content: ''; top: 0; background: #000; opacity: 80%; width: 100%; height: 100%;}
+.visual .mainTitle {position: absolute; top: 40%; left: 50%; transform: translateX(-50%); width: 100%; z-index: 100;}
+.visual .mainTitle h2 {font-size: 120px; text-align: center; color: #fff; letter-spacing: 5px;}
+
+/* intro */
+.intro {width: 100%; padding: 350px 0 200px; background: url(../img/sub_bg1.png) no-repeat 100% 50%/100% 1000px;}
+.intro .inner {width: 1200px; margin: auto;}
+.intro .inner .mockup {width: 600px; margin: auto;}
+.intro .inner .mockup img {width: 100%;}
+
+.intro .inner .textBox {display: flex; margin-top: 20px;}
+.intro .inner .textBox .leftBox {width: 40%;}
+.intro .inner .textBox .leftBox .date {color: #505050; font-size: 16px;}
+.intro .inner .textBox .leftBox .title {font-size: 71px;}
+.intro .inner .textBox .leftBox .title .sm {display: block; font-size: 52px;}
+
+.intro .inner .textBox .rightBox {width: 60%; text-align: left; position: relative;}
+.intro .inner .textBox .rightBox::after {content: ''; position: absolute; top: 38px; left: -80px; width: 1px; height: 140px; background: rgb(150, 150, 150);}
+.intro .inner .textBox .rightBox .desc {color: #505050; margin: 35px 0 20px;}
+.intro .inner .textBox .rightBox .btn2 {border: 1px solid #505050; border-radius: 30px; padding: 4px 20px; font-size: 15px; transition: all 0.3s;}
+.intro .inner .textBox .rightBox .btn2:hover {background: #000; color: #fff; transition: all 0.3s;}
+
+/* style */
+.style {width: 100%; padding: 150px 0 230px;}
+.style .inner {width: 1200px; display: flex; margin: auto;}
+.style .inner .imgBox {width: 60%; display: flex; position: relative;}
+.style .inner .imgBox .img1 {width: 470px; position: absolute; top: -20px;}
+.style .inner .imgBox .img1 img {width: 100%; border: 1px solid #a8a8a8;}
+.style .inner .imgBox .img2 {width: 470px; position: absolute; bottom: -40px; right: 150px;}
+.style .inner .imgBox .img2 img {width: 100%; border: 1px solid #a8a8a8;}
+
+.style .inner .textBox {width: 40%; text-align: right; box-sizing: border-box; padding-left: 20px;}
+.style .inner .textBox .colorBox {width: 310px; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 50px; float: right;}
+.style .inner .textBox .colorBox .color1 {width: 310px; height: 30px; background: #000; border-radius: 30px;}
+.style .inner .textBox .colorBox .color2 {width: 310px; height: 30px; background: #979797; border-radius: 30px;}
+.style .inner .textBox .colorBox .color3 {width: 310px; height: 30px; background: #ffffff; border-radius: 30px;}
+
+/* bg */
+.bg_pad_res_full {background: url(../img/sub_bg2.png) no-repeat 100% 0%/100% 2600px, url(../img/sub_bg3.png) no-repeat 100% 100%/100%;}
+
+/* pad */
+.pad {width: 100%; padding: 150px 0 200px;}
+.pad .inner {margin: auto; width: 100%; height: 600px; overflow: hidden;}
+.pad .inner .gif {width: 1000px; margin: auto; z-index: 100; position: relative;}
+.pad .inner .gif img {width: 100%;}
+
+.animated-title {position: relative; width: 100%; padding: 190px 0; overflow-x: hidden; overflow-y: hidden; top: -500px; opacity: 70%;}
+.animated-title .track {font-size: 140px; color: #D5D2CF; width: 3000px;}
+.animated-title .track .content1 {position: absolute; top: 0px; left: 400px; width: 100%;}
+.animated-title .track .content2 {position: absolute; top: 200px; right: 200px; width: 100%;}
+
+/* respon */
+.respon {width: 100%; padding: 150px 0 200px;}
+.respon .inner {margin: auto; text-align: center; width: 1300px;}
+.respon .inner .mockupBox {display: flex; gap: 50px; margin-top: 70px; justify-content: center;}
+.respon .inner .mockupBox .img1 {width: 35%; height: 400px; background: url(../img/sub_mockup_bg1.png) no-repeat 100% 0%/100% 100%; border-radius: 20px;}
+.respon .inner .mockupBox .img1 img {width: 75%; margin-top: 105px; animation: up 1s infinite alternate;}
+.respon .inner .mockupBox .img2 {width: 35%; height: 400px; background: url(../img/sub_mockup_bg2.png) no-repeat 100% 0%/100% 100%; border-radius: 20px;}
+.respon .inner .mockupBox .img2 img {width: 70%; margin-top: 60px; animation: up 1s infinite alternate;}
+
+@keyframes up {
+    0% {transform: translateY(-7px);}
+    100% {transform: translateY(0px);}
+}
+
+.respon .inner .btnBox {display: flex; justify-content: center; margin-top: 80px; gap: 100px;}
+.respon .inner .btnBox .box {width: 160px; height: 35px; line-height: 35px; border-radius: 30px; background: #fff; transition: all 0.3s;}
+.respon .inner .btnBox .box:hover {background: #fe526a; color: #fff; transition: all 0.3s;}
+.respon .inner .btnBox .box a {width: 100%; height: 100%; display: block;}
+
+
+/* full */
+.full {width: 100%; padding: 150px 0 200px;}
+.full .inner {margin: auto;}
+.full .inner .img {width: 800px; margin: auto;}
+.full .inner .img img {width: 100%;}
+
+/* footer */
+footer {width: 100%; background: url(../img/sub_footer.png) no-repeat 100% 0%/100% 500px; padding: 180px 0; background-color: #efefef; position: relative;}
+
+.goTop {position: fixed; right: 100px; bottom: 80px; font-size: 50px; color:  #000; z-index: 100000;}
+
+.splitting .char {
+    visibility: hidden;
+      visibility: visible;
+      --duration: 7s;
+      --delay: 0ms;
+      animation: slide-in var(--duration) cubic-bezier(0.7, 0, 0.1, 1) both
+        infinite;
+
+      animation-delay: calc(var(--delay) + (100ms * var(--char-index)));
+    }
+  
+    .content1::before {
+      color: lighten(#00043c, 30%);
+    }
+    .content1::after {
+      animation-name: slide-in-2;
+      color: white;
+    }
+
+  
+  @keyframes slide-in {
+    0% {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    30%,
+    70% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    95%,
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0% 0);
+    }
+  }
+  
+  @keyframes slide-in-2 {
+    0%,
+    10% {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    35%,
+    65% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    85%,
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0% 0);
+    }
+  }  
