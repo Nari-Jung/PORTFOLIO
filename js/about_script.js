@@ -11,7 +11,7 @@ $(function () {
 	});
 });
 
-//상단으로 이동
+// goTop
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 300) {
 		$('.goTop').fadeIn();
@@ -59,25 +59,22 @@ $(document).bind("mousemove touchmove", function(e){
 	$(".menuWrap > .roundBox > .pur").move(-15, e);
 });
 
-// header change
-var scrollValue = 0;    //var은 변수//
-scrollValue = $(document).scrollTop(); 
-
-fixHeader();
+// header
+var scrollValue = 0;
 
 $(window).on('scroll resize', function(){
- scrollValue = $(document).scrollTop(); 
- fixHeader();
+	scrollValue = $(document).scrollTop(); 
+	fixHeader();
 });
 
 function fixHeader(){
-  if(scrollValue > 450) {
-	   $('header').addClass('on');
-   } else {
-	  $('header').removeClass('on');}
- }
+	if(scrollValue > 450) {
+		$('header').addClass('on');
+	} else {
+		$('header').removeClass('on');}
+	}
 
-  //메뉴
+// menu
 $(function(){
     $('.menuOpen button.open').on('click', function(){
         $('.menuWrap').addClass('on2');

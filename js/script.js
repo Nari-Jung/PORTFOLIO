@@ -11,7 +11,7 @@ $(function () {
 	});
 });
 
-//상단으로 이동
+// goTop
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 300) {
 		$('.goTop').fadeIn();
@@ -23,6 +23,7 @@ $(window).scroll(function () {
 $(function () {
 	$('.goTop').on('click', function () {
 		var top = $('body').offset().top; //offset함수()는 top, left등 위치를 반환함
+		// console.log(top)
 		$('html, body').animate({
 			scrollTop: (top)
 		}, 300);
@@ -62,41 +63,39 @@ $(document).bind("mousemove touchmove", function(e){
 	$(".menuWrap > .roundBox > .pur").move(-15, e);
 });
 
-// header change
+// header
 var scrollValue = 0; 
-scrollValue = $(document).scrollTop(); 
 
-fixHeader();
-
-$(window).on('scroll resize', function(){
- scrollValue = $(document).scrollTop(); 
- fixHeader();
-});
+	$(window).on('scroll resize', function(){
+	scrollValue = $(document).scrollTop(); 
+	fixHeader();
+	});
 
 function fixHeader(){
-  if(scrollValue > 800) {
-	   $('header').addClass('on');
-   } else {
-	  $('header').removeClass('on');}
- }
+	if(scrollValue > 800) {
+		$('header').addClass('on');
+	} else {
+		$('header').removeClass('on');
+		}
+	}
 
-  //메뉴
-  $(function(){
-    $('.menuOpen button.open').on('click', function(){
+// menu 
+$(function(){
+	$('.menuOpen button.open').on('click', function(){
 		$('.menuWrap').addClass('on2');
 		$(".menuWrap").css('opacity', '1');	
-    });
-    $('.menuOpen .menuWrap .close').on('click', function(){
+	});
+	$('.menuOpen .menuWrap .close').on('click', function(){
 
 		$(".menuWrap").css('opacity', '0');
 		
 		setTimeout(() => {
 			$('.menuOpen .menuWrap').removeClass('on2');	
 		}, 200);
-        
-    });
+		
+	});
 	
-// text change
+	// header text change
 	$(".logo a").on("mouseover", function() {
 		$(".logo a").html('GO HOME')
 

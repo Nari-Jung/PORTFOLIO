@@ -11,7 +11,7 @@ $(function () {
 	});
 });
 
-//상단으로 이동
+// goTop
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 300) {
 		$('.goTop').fadeIn();
@@ -45,14 +45,14 @@ $(document).bind("mousemove touchmove", function(e){
 });
 
 function fixHeader(){
-  if(scrollValue > 800) {
-	   $('header').addClass('on');
-   } else {
-	  $('header').removeClass('on');}
- }
+	if(scrollValue > 800) {
+		$('header').addClass('on');
+	} else {
+		$('header').removeClass('on');}
+	}
 
-  //메뉴
-  $(function(){
+// menu
+$(function(){
     $('.menuOpen button.open').on('click', function(){
 		$('.menuWrap').addClass('on2');
 		$(".menuWrap").css('opacity', '1');	
@@ -73,7 +73,7 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > 750) {
         $("header").addClass("colorChange");
     } else {
-       $("header").removeClass("colorChange");
+        $("header").removeClass("colorChange");
     }
 });
 
